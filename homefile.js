@@ -1,27 +1,28 @@
-let button = document.querySelector('Commanders Palace')
+const firstButtonOne = document.querySelectorAll('#RestaurantOne')
 
-button.addEventListener('onclick', (e) =>{
+firstButtonOne.addEventListener('click', (e) =>{
 e.preventDefault();
+prompt('if you like seafood!')
 });
 
-let button = document.querySelector('Jeans seafood')
-button.addEventListener('onclick',()=>{
+const secondButtonTwo = document.querySelector('#RestaurantTwo')
+secondButtonTwo.addEventListener('click',()=>{
+    prompt('if you like seafood and hamburgers!')
 });
 
-let button = document.querySelector('Cajuns seafood and restaurant')
-button.addEventListener('onclick',()=>{
+const thirdButtonThree = document.querySelector("#RestaurantThree")
+thirdButtonThree.addEventListener('click',()=> {
+    prompt('if you like seafood, hamburgers, and hot dogs!')  
+});
+const thirdButtonThree = document.querySelector("#RestaurantThree")
+thirdButtonThree.addEventListener('click',()=> {
+    prompt('Undecided choice will be made for you!')  
 });
 
+const allButtons = document.querySelectorAll('button')
 
-
-const myFavoriteColor = document.querySelector('Jeans seafood')
-myFavoriteColor.addEventListener('submit',button);
-
-
-const myFavoritePlace = document.querySelector('#place')
-myFavoritePlace.addEventListener('submit', button);
-
-
-
-const myFavoriteRitual = document.querySelector('Cajuns seafood and restaurant)
-myFavoriteRitual.addEventListener('submit', button);
+allButtons.addEventListener('click', () => {
+if (allButtons.value.length < 3) {
+   prompt(allButtons[i][0]) 
+} 
+})
